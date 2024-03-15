@@ -6,9 +6,11 @@ body {
   .header {
     background: url(Background.jpg) no-repeat center center; 
     background-size: contain;
-    height: 1000px;
-    text-align: center; 
+    height: 600px;
+    padding-top: 50px;
+    text-align: center;
   }
+  
 
   .container{
     margin:0 auto;
@@ -55,5 +57,32 @@ body {
   .coffee::after{
     content: "\a\a\a";
     white-space: pre;
+  }
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  li a:active{
+    background-color: purple;
   }
 
