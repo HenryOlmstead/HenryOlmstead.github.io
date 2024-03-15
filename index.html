@@ -22,7 +22,7 @@ EMAIL: holmstea@uci.edu
 
 
 <body>
-  <ul class="ul">
+  <ul class="ul" id="navbar">
     <li><a href="https://henryolmstead.github.io/">Home</a></li>
     <li><a href="https://www.linkedin.com/in/henry-olmstead-a5800b199/">LinkedIn</a></li>
     <li><a href="https://henryolmstead.itch.io/">Itch.io</a></li>
@@ -95,6 +95,19 @@ EMAIL: holmstea@uci.edu
     </a>
   </p>
 </body>
-
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
 
 </html>
