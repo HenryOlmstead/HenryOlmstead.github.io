@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link href="style.css" rel = "stylesheet">
+
+<ul class="ul" id="navbar">
+  <li><a class="active" href="https://henryolmstead.github.io/">Home</a></li>
+  <li><a href="https://www.linkedin.com/in/henry-olmstead-a5800b199/">LinkedIn</a></li>
+  <li><a href="https://henryolmstead.itch.io/">Itch.io</a></li>
+  <li><a href="about.html">UX Research</a></li>
+  <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
+</ul>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
   <head>
     <meta charset="utf-8">
     <title>Project Page</title>
   </head>
 
-  <div class="header">
-    <div class ="container">
+  <div class="header2">
+    <div class ="container2">
       <h1> Project Page</h1>
       <p>  Here is where INF 132's project will be located</p>
       <b> Our Problem Statement</b>
