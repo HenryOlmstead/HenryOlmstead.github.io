@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="style.css" rel = "stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <!-- Navbar and Sticky Functionality -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="https://www.linkedin.com/in/henry-olmstead-a5800b199/">LinkedIn</a>
+  <a href="https://henryolmstead.itch.io/">Itch.io</a>
+  <a class="active" href="UXResearch.html">UX Research</a>
+  <a href="javascript:void(0);" class="icon" onclick="resizeNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("myTopnav");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+
+function resizeNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+
+<!-- Navbar and Sticky Functionality End--> 
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project Page</title>
+  </head>
+
+  <div class="parallax">
+    <div class ="container2">
+      <div class="header2">
+        <h1> Sleep Inc Project Page</h1>
+        <p>  Quater Long research project in HCI and UX design </p>
+        <b> Our Problem Statement</b>
+        <p></p>
+        <i> How might we present reliable, consistent, engaging, and relevant sleep tracking for young adults who struggle to stay on top of their wellbeing?</i>
+      </div>
+      <img style="float: center; margin: 0px 15px 0px 0px;" src="LeoSleepData.png"  alt="Sleep Data Screen mockup">
+    </div>
+  </div>
+ 
+ 
+</html>
