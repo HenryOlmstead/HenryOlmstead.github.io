@@ -13,6 +13,7 @@ EMAIL: holmstea@uci.edu
   <meta name="author" content="Henry Olmstead">
   <meta name="description" content="Henry Olmstead's Digital Portfolio">
   <link href="style.css" rel = "stylesheet">
+  <link rel="stylesheet" href="navbar.css">
   <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>DASH.COM</title>
@@ -22,35 +23,68 @@ EMAIL: holmstea@uci.edu
 
 
 <body>
-  <ul class="ul" id="navbar">
-    <li><a class="active" href="https://henryolmstead.github.io/">Home</a></li>
-    <li><a href="https://www.linkedin.com/in/henry-olmstead-a5800b199/">LinkedIn</a></li>
-    <li><a href="https://henryolmstead.itch.io/">Itch.io</a></li>
-    <li><a href="UXResearch.html">UX Research</a></li>
-    <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
-  </ul>
+  <!--- Navbar-->
 
+  <div class="topnav" id="myTopnav">
+    <a class="active"  href="index.html" ><i class="fas fa-home"></i></a>
+    <a href="https://www.linkedin.com/in/henry-olmstead-a5800b199/"><i class = "fab fa-linkedin"></i></a>
+    <a href="https://henryolmstead.itch.io/"><i class = "fas fa-gamepad"></i></a>
+    <a href="UXResearch.html">UX Research</a>
+    <a href="javascript:void(0);" class="icon" onclick="resizeNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
+  </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  
+  
+  function resizeNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+  <!--Title Text-->
   <div class="header">
     <div class ="container">
       <h1 style="float:left; background:#ffff; margin-bottom: 5px; font-size:3vw"> Welcome to Henry's Portfolio<br> Putting <i>FUN</i> in Functional </h1>
-      
     </div>
   </div>
  
   <!-- Apples and Oranges Section-->
   <div class="main">
-    <div class="container">
-      <div style="text-align: left">
-      <img style="float: left; margin: 0px 15px 0px 0px;" src="AnO.png" width="196" height="150" alt="Logo for Apples and Oranges Arts">
-    </div>
+    
+    <div class = "container" style="float: left;">
       <h2> Developer at Apples and Oranges Arts</h2>
       <p> Currently working on virtualizing Change Happens</p>
       <p> Creating visions for Artist3, a new venture studio</p>
+    </div>
+
+      <div class="container" style="padding: 5%">
+        <div style="text-align: right">
+        <img style="float: right; margin: 0px 15px 0px 0px;" src="AnO.png" width="196" height="150" alt="Logo for Apples and Oranges Arts">
+      </div>
 
     </div>
 
   </div>
-
+  <br><br>
   <!-- UC Irvine Crew Section-->
   <div class="cox">
     <div class="container">
