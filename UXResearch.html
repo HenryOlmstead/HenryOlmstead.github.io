@@ -4,7 +4,9 @@
   <link href="style.css" rel = "stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="navbar.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DASH</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
 <!-- Navbar and Sticky Functionality -->
@@ -16,7 +18,7 @@
   <a href="javascript:void(0);" class="icon" onclick="resizeNav()">
     <i class="fa fa-bars"></i>
   </a>
-  <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
+  <li  style="float:right; margin: 2.5px 2.5px 2.5px 2.5px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
 </div>
 
 <script>
@@ -54,15 +56,75 @@ function resizeNav() {
   <div class="parallax">
     <div class ="container2">
       <div class="header2">
-        <h1> Sleep Inc Project Page</h1>
-        <p>  Quater Long research project in HCI and UX design </p>
-        <b> Our Problem Statement</b>
+    <h1 style="color: #BB99FF"> Sleep Inc Project Page</h1>
+        <p style="text-align: center; color: #1E1E24">Quarter-long research project in HCI and UX design </p>
+        <hr style="color:#1E1E24">
+        <p style="color: #1E1E24"> For this project, our group was tasked to create an app that focuses on User's Health and Wellbeing.</p>
+        <p style=" color: #1e1e24"> Due to our team's previous experience with similar apps, we set out to create an optimized Sleep Tracker.</p>
+        <b> Our initial problem statement<br></b>
+        <i>“How might we present reliable, consistent, and relevant sleep tracking for young adults who struggle to stay on top of their wellbeing?”
+        </i>
+       
         <p></p>
-        <i> How might we present reliable, consistent, engaging, and relevant sleep tracking for young adults who struggle to stay on top of their wellbeing?</i>
+
+        <p> To begin our ideation phase, we conducted a competitive analysis on existing sleep trackers and the functionality they offered </p>
+        <!--- Comp Analysis Card-->
+        <div style="float:right;  max-height: 30vh; width: 27vw; border-radius: 25px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px 10px; margin: 3px; background-color:#1768AC">
+        <img style="float:center; height: auto; max-width: 100%; border-radius: 15px;" src="sleepCA.png" alt="Competitive analysis comparing Pokemon Sleep, Apple Health, Fitbit, SleepNumberIQ, and Sleep Score"></img>
+        <p   style="text-align: center; font-size:large; color: #FFFCF9">Sleep Tracking Applications Competitive Analysis table</p>
+        </div>
+        <!----->
+        <p> From this, we decided to create an app that would provide as many features as possible into one application </p>
+        <p> These findings led us to develop a User Research Plan, which dictated how we would conduct our interviews.<br></p>
+        <h2 style="color:#877B66;"> User Interviews </h2>
+        <p> Our group set out to find 10 participants who were either currently using a Sleep Tracker, had used one in the past, or who were currently concerned about the quality of their sleep </p>
+        <p> We conducted our interviews over the course of two weeks, and came up with some suprising insights</p>
+        <br>
+        <h2 style="color:#877B66;"> Key Findings </h2>
+        <ul>
+          <li> Users expressed frustrations at not being able to track daytime naps</li>
+          <li> Many users found screentime restrictions as more of an annoyance than a preventative measure</li>
+          <li> Multiple users mentioned their schedules are so different day-to-day that they have trouble setting consistent alarms </li>
+          <li> Almost all users reported that they "think their data is interesting", but have no incentive to improve it </li>
+        </ul>
+        <hr>
+        <h2 style="color:#877B66;"> Key Insights </h2>
+        <p> By far the most important insight our team came away with was that Users had a hard time being consistent with their sleep, even with the aid of a sleep tracker</p>
+        <ul>
+        <li> <i>Many participants mentioned that they were already in control of their sleep schedule, and used the tracker to confirm what they already knew, rather than to create healthy habits</i></li>
+        </ul>
+        <p> For this reason, our team decided to shift our focus from providing a plethora of ways to track sleep to giving users a <i>reason</i> to be consistent with thier sleep</p>
+        <p> With a shift in our design philosophy, our new goal was to create an <i> Engaging</i> user experience, and incentivize our Users to return every night</p>
+        <!---Storyboard Card-->
+        <div style="float:right;  max-height: 30vh; width: 27vw; border-radius: 25px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px 10px; margin: 10px; background-color:#1768AC">
+          <img style="float:center; height: auto; max-width: 100%; border-radius: 15px;" src="StoryBoard_Trevor.png" alt="Storyboard depicting a student with a variable schedule being unable to set alarms consistently"></img>
+          <p style="text-align: center; font-size:large; color: #FFFCF9"> Storyboard depicting a User with a variable schedule</p>
+          </div>
+          <!----->
+        <hr>
+        <h2 style="color:#877B66;"> Storyboards and Artifacts </h2>
+        
+        <p> Our team took these insights and generated storyboards of possible User Scenarios</p>
+        <p> It occured to us that in order to best serve our Users and keep them consistent, we needed to do two things:</p>
+        <ul>
+          <li> We need to tailor the data to the desired experience.</li>
+          <li> We need to keep Users Engaged. </li>
+        </ul>
+        <p> This means finding some way to let the users customize their experience; some users want EVERY piece of data they can get, while others might only want to know how much time they spent asleep. </p>
+        <p> Users can get overwhelmed when presented with TOO many statistics, so keeping the optimal amount of data visible is crucial</p>
+        <p> Additionally, many Users felt they weren't getting much out of their sleep tracker, and graduallly began using it less and less </p>
+        <p> With these in mind we went back to the drawing board, and begain brainstorming ways to incorporate these features. </p>
+        <hr>
+        <h2 style="color:#877B66;">Prototypes</h2>
+        <p> For our team's protoype we took a note from our competitive analysis and decided what better way to keep users engaged than by gamifying the application.</p>
+        <p> Similar to Pokemon Go, or the Houses from Harry Potter, we settled on a design that would sort Users into "teams" based on their sleep chronotype.</p>
+        <p> Depending on our User's sleep cycle, ie Early Riser, Night Owl, Sun Follower, or Sporadic, they would be placed on a team where they could choose to compete against other users.</p>
+        <p> By sorting the User base in this way, we could ensure that each User had data to match against ther own, and could track thier trends against Users with similar sleep schedules.</p>
+      
       </div>
-      <img style="float: center; margin: 0px 15px 0px 0px;" src="LeoSleepData.png"  alt="Sleep Data Screen mockup">
+      
     </div>
   </div>
  
- 
+<!--- <img style="float: center; margin: 0px 15px 0px 0px;" src="LeoSleepData.png"  alt="Sleep Data Screen mockup"> --->
 </html>

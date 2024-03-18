@@ -12,17 +12,19 @@ EMAIL: holmstea@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Henry Olmstead">
   <meta name="description" content="Henry Olmstead's Digital Portfolio">
-  <link href="style.css" rel = "stylesheet">
-  <link rel="stylesheet" href="navbar.css">
+  <link href="style.css"  rel = "stylesheet">
+  <link href="navbar.css" rel = "stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>DASH.COM</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 
 
 
-<body>
+
   <!--- Navbar-->
 
   <div class="topnav" id="myTopnav">
@@ -33,7 +35,7 @@ EMAIL: holmstea@uci.edu
     <a href="javascript:void(0);" class="icon" onclick="resizeNav()">
       <i class="fa fa-bars"></i>
     </a>
-    <li  style="float:right; margin: 2.5px 2.5px 0px 0px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
+    <li  style="float:right; margin: 2.5px 2.5px 2px 2.5px"><img src="Chomper.png" width="40" height="40" alt="Chester Chomper Profile Picture"></img></li>
   </div>
 
   <script>
@@ -59,7 +61,8 @@ EMAIL: holmstea@uci.edu
       x.className = "topnav";
     }
   }
-    </script>
+  </script>
+  <body>
   <!--Title Text-->
   <div class="header">
     <div class ="container">
@@ -124,19 +127,7 @@ EMAIL: holmstea@uci.edu
     </a>
   </p>
 </body>
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
+
+
 
 </html>
